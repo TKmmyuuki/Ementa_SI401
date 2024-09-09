@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI401 - Programação para a Web</title>
+    <link rel="icon" type="image/png" href="imagens/logo.png"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #1f7fa5;
+            padding: 15px;
+        }
+
+        h3 {
+            color: white;
+            font-weight: 700; 
+            background-color: #333;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1f7fa5;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        aside {
+            width: 25%;
+            padding: 15px;
+            background-color: lightgray;
+            float: right;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .center-btn {
+            text-align: center;
+        }
+        
+        .btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            display: inline-block; 
+        }
+        
+        .btn:hover {
+            background-color: #1f7fa5;
+        }       
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #1f7fa5;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: nowrap; 
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow-x: auto; 
+        }
+        .book-list li {
+            margin: 10px;
+            flex: 1 1 14%; 
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .book-list img {
+            max-width: 100%;
+            height: auto;
+            display: block; 
+        }
+        .book-list p {
+            margin: 10px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <main id="top">
+        <!-- Topo da página -->
+        <h1>SI401 - Programação para a Web</h1>
+        <hr>
+        <nav>
+            <a href="#ementa">Ementa</a>
+            <a href="#objetivos">Objetivo</a>
+            <a href="#topicos">Tópicos</a>
+            <a href="#avaliacao">Método avaliativo</a>
+            <a href="#referencias">Referências</a>
+        </nav>
+        <hr>
+
+        <!-- Corpo principal -->
+        <section>
+            <h3>Informações Gerais</h3>
+            <p>
+                <b>Código / Nome da Disciplina: </b>SI401A - Programação para a Web 
+                <br><b>Professor responsável: </b>Guilherme Palermo Coelho (gpcoelho@unicamp.br)
+                <br><b>PAD: </b>Victor Hugo Costa Osses (v2543732@dac.unicamp.br)
+                <br><b>Carga horária total: </b>60 horas (15 semanas)
+                <br><b>Sala de aula: </b>LP10 (laboratório de informática)
+            </p>
+        </section>
+
+        <aside>
+            <p><b>Mais informações sobre a disciplina:</b></p>
+            <ul>
+                <li><a href="menu/cronograma.html" style="text-decoration:none;">Cronograma</a></li>
+                <li><a href="menu/criterios.html" style="text-decoration:none;">Critérios de avaliação</a></li>
+            </ul>
+        </aside>
+
+        <section id="ementa">
+            <h3>Ementa</h3>
+            <p>
+                Elaboração de páginas web. Linguagens de marcação. Folhas de estilo. Javascript. Uso de linguagens de programação para geração dinâmica de páginas web. 
+                Uso de servidores web para armazenamento de sites. Atividades práticas de implementação de sistemas baseados nessas linguagens.
+            </p>
+        </section>
+
+        <section id="objetivos">
+            <h3>Objetivo</h3>
+            <p>
+                Colocar em perspectiva a programação para Web. Capacitar o aluno a compreender as principais linguagens de marcação e estilo. Capacitar o aluno a compreender e
+                desenvolver scripts para execução em navegadores. Capacitar o aluno a compreender e desenvolver scripts para execução em servidores web.
+            </p>
+        </section>
+
+        <section id="topicos">
+            <h3>Tópicos</h3>
+            <ul>
+                <li>Introdução a Web</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Acessibilidade na Web</li>
+                <li>Front-end com JavaScript</li>
+                <li>Back-end com PHP e AJAX</li>
+            </ul>
+            <details>
+                <summary><a href="menu/cronograma.html" style="text-decoration:none;">Cronograma</a></summary>
+            </details>
+        </section>
+
+        <section id="avaliacao">
+            <h3>Método avaliativo</h3>
+            <p>
+                A disciplina contará com um Projeto Final (a ser desenvolvido em grupo), dividido em três entregas parciais ao longo do semestre, e uma série de exercícios práticos de
+                fixação (a serem desenvolvidos individualmente). Tais atividades serão utilizadas para avaliar a aprendizagem. No caso do Projeto Final, as notas individuais de cada aluno
+                serão atribuídas conforme sua contribuição em cada etapa.
+            </p>
+            <details>
+                <summary><a href="menu/criterios.html" style="text-decoration:none;">Critérios avaliativos</a></summary>
+            </details>
+        </section>
+
+        <section id="referencias">
+            <h3>Referências</h3>
+            <ul>
+                <li>Schultz, D. & Cook, C. “Beginning HTML with CSS and XHTML – Modern Guide and Reference”. Apress, 2007. DOI: <a href="http://dx.doi.org/10.1007/978-1-4302-0350-6">http://dx.doi.org/10.1007/978-1-4302-0350-6</a> (acesso via VPN/Unicamp).</li>
+                <li>McPeak, J. & Wilton, P. “Beginning JavaScript®”. 5th. Ed., John Wiley & Son, 2015. Disponível em: <a href="http://onlinelibrary.wiley.com/book/10.1002/9781119209423">http://onlinelibrary.wiley.com/book/10.1002/9781119209423</a> (acesso via VPN/Unicamp).</li>
+                <li>Saraiva, M. O. “Desenvolvimento de sistemas com PHP”. SAGAH, 2018. Disponível em: <a href="https://integrada.minhabiblioteca.com.br/books/9788595023222">https://integrada.minhabiblioteca.com.br/books/9788595023222</a> (é necessário cadastro via Unicamp).</li>
+                <li>W3Schools Online Web Tutorials: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>.</li>
+                <li>Mozilla Developer Network: <a href="http://developer.mozilla.org/">http://developer.mozilla.org/</a>.</li>
+                <li>Silva, M. S. “Construindo sites com CSS e (X)HTML Sites controlados por folhas de estilo em cascata”. Novatec, 2008.</li>
+                <li>Silva, M. S. “JavaScript: Guia do Programador”. Novatec, 2010.</li>
+                <li>Niederauer, J. “Desenvolvendo Websites com PHP”, 2ª ed. Novatec, 2011.</li>
+                <li>Dall'oglio, P. “PHP: Programando com Orientação a Objetos”, 2a ed. Novatec, 2009.</li>
+            </ul>
+            <ul class="book-list">
+                <li>
+                    <a href="https://www.amazon.com.br/Beginning-HTML-CSS-XHTML-Reference/dp/1590597478" target="_blank">
+                        <img src="../ementa _da_diciplina/imagens/Beginning HTML.jpg" alt="Capa do Livro 'Beginning HTML with CSS and XHTML – Modern Guide and Reference'">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://160592857366.free.fr/joe/ebooks/ShareData/Beginning%20JavaScript%204e.pdf" target="_blank">
+                        <img src="../ementa _da_diciplina/imagens/Beginning JavaScript.jpeg" alt="Capa do Livro 'Beginning JavaScript'">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.amazon.com.br/Construindo-Sites-com-CSS-HTML/dp/8575221396" target="_blank">
+                        <img src="../ementa _da_diciplina/imagens/CSS HTML.jpg" alt="Capa do Livro 'Construindo sites com CSS e (X)HTML Sites controlados por folhas de estilo em cascata'">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.amazon.com.br/Javascript-Guia-Programador-Maur%C3%ADcio-Silva/dp/8575222481/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=35FYZ5MXL3YJE&dib=eyJ2IjoiMSJ9.2cgx10NMoILAJ4iSZmPkFU_ZeLF6NaR3Nt2FTi4nL5EXHJfgzvMRwZAb4mwMnOAfCluAWA00gXgEdG3mr4oW0_TAEgYaTxNCgO3ObQENN6xxJEHCJj3c2R9PggrPoN4_wGVdYuK-taMm8dn_AEfFR-U_ivGJoVic2uY5jqpo_nuKdXsq3OmivAdX-lAlNcX1jq9zWJKEP-s-_X9kfPo-x9fu3zohRbZjJoVR73f1oYA.uNeadb1B1BtNpiXddCRYgJsyTct6ghl1PA8orhRPouM&dib_tag=se&keywords=JavaScript%3A+Guia+do+Programador&qid=1725908165&s=books&sprefix=javascript+guia+do+programador%2Cstripbooks%2C307&sr=1-1" target="_blank">
+                        <img src="../ementa _da_diciplina/imagens/JavaScript guia.jpg" alt="Capa do Livro 'JavaScript: Guia do Programador'">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.amazon.com.br/PHP-Programando-com-Orienta%C3%A7%C3%A3o-Objetos/dp/8575222007/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1E1EUVODKDHMG&dib=eyJ2IjoiMSJ9.mbHioPYXabvZJdLbJbnoL_szkJ6Ww7x01LE6M69DZTmQNQk0ASG6UJ1TD6MrkqbY58FZBdos3chwpCOvoGogGMlzESIZYVGQgYBjT0aEwRhBAqF7sBgMnLim_5enIyIugPKvq4eo5xrvmNS0hV2bTt1SPN7pm7oidMAR16S-qN9Eop4aspZz9kAOPGZCxEAQCjE1U3rXJYEMq23-5W-lT4_5HAnGp-fQk7aHgFWltO0.0j7qCda6ryYaIyDTsSqNlhByh1sQzASp155ivi-Wd9A&dib_tag=se&keywords=PHP%3A+Programando+com+Orienta%C3%A7%C3%A3o+a+Objetos&qid=1725908226&s=books&sprefix=php+programando+com+orienta%C3%A7%C3%A3o+a+objetos%2Cstripbooks%2C323&sr=1-1" target="_blank">
+                        <img src="../ementa _da_diciplina/imagens/php POO.jpg" alt="Capa do Livro 'PHP: Programando com Orientação a Objetos'">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.amazon.com.br/Desenvolvendo-Websites-com-PHP-Interativos/dp/8575225340/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GPCKIMWWYJWK&dib=eyJ2IjoiMSJ9.Gq7apYmFl2LghCWj_xuzeHiZ1sGuDZkNF0Ll4PoUnOLdwwSt0ImlqiKwYWgd546OtFH_RuChF5G3dau4pDINwRqbHV_gjmM2FDHrVdxpfsZ5MBgsYvmfs0nMS3Nw5HypTHVBNe2hquf4ajMYMZoH5NA4xOYZZwlNJYu-WN2I6W6BtiDKN1jQip2vPxBjhEKZ9lrzD-ia8WqlSGF0IROW-fsuGIyRsjQjdyceK4-c2XI.UumxTAR7U5JS-untZ9qrIrm0YTGcwp2Dk56ITtzix3c&dib_tag=se&keywords=Desenvolvendo+Websites+com+PHP&qid=1725908274&s=books&sprefix=desenvolvendo+websites+com+php%2Cstripbooks%2C421&sr=1-1" target="_blank">
+                        <img src="../ementa _da_diciplina/imagens/PHP web.jpg" alt="Capa do Livro 'Desenvolvendo Websites com PHP'">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://loja.grupoa.com.br/eb-ead-desenvolvimento-de-sistemas-com-php9788595023222-p1008816" target="_blank">
+                        <img src="../ementa _da_diciplina/imagens/PHP.jpeg" alt="Capa do Livro 'Desenvolvimento de sistemas com PHP'">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <p><br></p>
+        <p class="center-btn"><a href="#top" class="btn">Voltar para o início</a></p>
+
+    </main>
+
+    <footer>
+        <p>Caso haja <b>dúvidas ou queira agendar uma reunião</b>, sinta-se à vontade para enviar por e-mail.</p>
+        <a href="mailto:gpcoelho@unicamp.br?body=Olá">Mandar um e-mail.</a>
+    </footer>
+</body>
+</html>

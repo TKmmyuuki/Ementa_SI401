@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI401 - Programação para a Web</title>
+    <link rel="icon" type="image/png" href="imagens/logo.png"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #1f7fa5;
+            padding: 15px;
+        }
+
+        h3 {
+            color: white;
+            font-weight: 700; 
+            background-color: #333;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1f7fa5;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .center-btn {
+            text-align: center;
+        }
+        
+        .btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            display: inline-block; 
+        }
+        
+        .btn:hover {
+            background-color: #1f7fa5;
+        }       
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #1f7fa5;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .table-container {
+            margin: 20px; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #1f7fa5;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <main id="top">
+        <h1>SI401 - Programação para a Web</h1>
+        <hr>
+        <nav>
+            <a href="../index.html#ementa">Ementa</a> 
+            <a href="../index.html#objetivos">Objetivo</a> 
+            <a href="../index.html#topicos">Tópicos</a> 
+            <a href="../index.html#avaliacao">Método avaliativo</a> 
+            <a href="../index.html#referencias">Referências</a>
+        </nav>
+        <hr>
+    </main>
+
+    <!-- Corpo secundário-->
+    <div class="table-container">
+        <h3>Cronograma</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>AULA</th>
+                    <th>DATA</th>
+                    <th>CONTEÚDO PROGRAMÁTICO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>07/08</td>
+                    <td>
+                        <b>Unidade 0:</b><br>
+                        Conteúdo: instruções gerais sobre a disciplina.<br>
+                        Objetivos: descrever o funcionamento da disciplina, formato das aulas, Projeto Final, critérios de avaliação e monitorias.<br><br>
+                        <b>Unidade 1:</b><br>
+                        Conteúdo: visão geral sobre o funcionamento da web e contextualização da Programação para Web.<br>
+                        Objetivos: descrever os passos de uma requisição entre navegador e servidor, interpretar mensagem HTTP e introduzir o contexto da Programação para a Web.
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>14/08</td>
+                    <td>
+                        <b>Unidade 2:</b><br>
+                        Conteúdo: HTML e estrutura de documentos (tags, DOCTYPE, elementos e atributos).<br>
+                        Objetivos: entender HTML e construir documentos conforme o padrão.<br><br>
+                        <b>Unidade 3:</b><br>
+                        Conteúdo: exemplos de elementos HTML (parágrafos, títulos, imagens, hyperlinks, tabelas, listas e iFrames).<br>
+                        Objetivos: construir documentos HTML utilizando elementos comuns.
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>21/08</td>
+                    <td>
+                        <b>Unidade 4:</b><br>
+                        Conteúdo: o elemento HEAD de HTML.<br>
+                        Objetivos: construir documentos HTML com o elemento HEAD.<br><br>
+                        <b>Unidade 5:</b><br>
+                        Conteúdo: layouts via HTML.<br>
+                        Objetivos: estruturar o conteúdo em layouts bem definidos.
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>28/08</td>
+                    <td>
+                        <b>Unidade 6:</b><br>
+                        Conteúdo: CSS - definições, sintaxe e formas de utilização.<br>
+                        Objetivos: construir folhas de estilo que definam a aparência de documentos HTML.<br><br>
+                        <b>Unidade 7:</b><br>
+                        Conteúdo: CSS - propriedades de fundo de tela, texto e fonte.<br>
+                        Objetivos: explorar propriedades de fundo de tela, texto e fonte com CSS.
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>04/09</td>
+                    <td>
+                        <b>Unidade 8:</b><br>
+                        Conteúdo: CSS - propriedades abreviadas e o modelo de caixas (box model).<br>
+                        Objetivos: definir layouts utilizando o modelo de caixas do CSS.
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>11/09</td>
+                    <td>
+                        <b>Unidade 9:</b><br>
+                        Conteúdo: programação no front-end com JavaScript: definições, sintaxe, instruções e o objeto DOM.<br>
+                        Objetivos: escrever programas básicos em JavaScript para navegadores.<br><br>
+                        <b>Unidade 10:</b><br>
+                        Conteúdo: detecção e reação a eventos via JavaScript.<br>
+                        Objetivos: escrever programas que reajam a eventos disparados pelo usuário.
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>18/09</td>
+                    <td>
+                        <b>Unidade 11:</b><br>
+                        Conteúdo: manipulação de formulários HTML via JavaScript.<br>
+                        Objetivos: manipular dados fornecidos pelo usuário via formulários HTML com JavaScript.<br><br>
+                        <b>Unidade 12:</b><br>
+                        Conteúdo: orientação a objetos em JavaScript.<br>
+                        Objetivos: seguir o paradigma de orientação a objetos em JavaScript.
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>25/09</td>
+                    <td>Aula para desenvolvimento da segunda parcial do Projeto Final.</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>02/10</td>
+                    <td>Tecnologia em Foco (não haverá aulas).</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>09/10</td>
+                    <td>
+                        <b>Unidade 13:</b><br>
+                        Conteúdo: programação no back-end com PHP: infraestrutura necessária e aspectos gerais da linguagem.<br>
+                        Objetivos: escrever programas simples em PHP executados no servidor.<br><br>
+                        <b>Unidade 14:</b><br>
+                        Conteúdo: aspectos específicos da linguagem PHP: operadores, estruturas de controle e funções.<br>
+                        Objetivos: escrever programas em PHP no servidor.
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>16/10</td>
+                    <td>
+                        <b>Unidade 15:</b><br>
+                        Conteúdo: PHP e formulários HTML, Server Side Includes.<br>
+                        Objetivos: escrever programas em PHP que recebam e manipulem dados de formulários HTML.
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>23/10</td>
+                    <td>
+                        <b>Unidade 16:</b><br>
+                        Conteúdo: orientação a objetos em PHP.<br>
+                        Objetivos: seguir o paradigma de orientação a objetos em PHP.<br><br>
+                        <b>Unidade 17:</b><br>
+                        Conteúdo: acesso a Bancos de Dados em PHP via PHP Data Objects (PDO).<br>
+                        Objetivos: escrever programas que manipulem bancos de dados com PHP.
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>30/10</td>
+                    <td>Aula para desenvolvimento da terceira parcial do Projeto Final.</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>06/11</td>
+                    <td>
+                        <b>Unidade 18:</b><br>
+                        Conteúdo: Cookies e sessões em PHP.<br>
+                        Objetivos: manter sessões abertas e permitir o fluxo de informações entre páginas.<br><br>
+                        <b>Unidade 19:</b><br>
+                        Conteúdo: comunicação assíncrona entre back-end (PHP) e front-end (JavaScript).<br>
+                        Objetivos: trocar dados de maneira assíncrona entre front-end e back-end.
+                    </td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>13/11</td>
+                    <td>Aula para desenvolvimento da terceira parcial do Projeto Final.</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>20/11</td>
+                    <td>FERIADO (não haverá aulas).</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>27/11</td>
+                    <td>Aula para conclusão (e entrega) da terceira parcial do Projeto Final.</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>04/12</td>
+                    <td>Semana de Estudos (não haverá aulas).</td>
+                </tr>
+                <tr>
+                    <td>EXAME</td>
+                    <td>11/12</td>
+                    <td>Exame Final.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p><br></p>
+    <p class="center-btn"><a href="../index.html#top" class="btn">Voltar para o início</a></p>
+    <hr>
+    <footer>
+        <p>Caso haja <b>dúvidas ou queira agendar uma reunião</b>, sinta-se à vontade para enviar por e-mail. </p>
+        <a href="mailto:gpcoelho@unicamp.br?body=Olá">Mandar um e-mail.</a>
+    </footer>
+</body>
+</html>
